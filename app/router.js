@@ -2,6 +2,10 @@ fs = require('fs');
 let counter = 0;
 
 function router(app){
+    app.get("/", function(req, res) {
+        res.json(path.join(__dirname, "public/index.html"));
+    });
+
     app.get('/notes',function(req,res){
         const notes = fs.readFileSync('./public/notes.html','utf-8')
         res.send(notes)
