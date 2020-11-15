@@ -3,7 +3,7 @@ let counter = 0;
 
 function router(app){
     app.get("/", function(req, res) {
-        res.json(path.join(__dirname, "public/index.html"));
+        res.json(path.join("public/index.html"));
     });
 
     app.get('/notes',function(req,res){
@@ -21,8 +21,8 @@ function router(app){
         let note = req.body;
         let file = JSON.parse(fs.readFileSync('./app/db.json','utf-8'))
 
-        counter++;
-        note.id = note.length + counter;
+        
+        note.id = Date.parse();
 
         if (file === ''){
             file = []
