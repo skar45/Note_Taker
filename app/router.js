@@ -22,7 +22,7 @@ function router(app){
         let file = JSON.parse(fs.readFileSync('./app/db.json','utf-8'))
 
         
-        note.id = Date.parse();
+        note.id = Date.now();
 
         if (file === ''){
             file = []
