@@ -10,9 +10,8 @@ This app can save and delete notes. It uses api routes to send HTTP methods to t
 [Installation](#Installation)  
 [Usage](#Usage)  
 [Lisence](#License)  
-[Contribution Guideline](#custom-cont)  
-[Test Instructions](#custom-test)  
-[Questions](#custom-q)  
+[Contribution](#contribution)  
+
 
 ## Installation 
 Node.JS is required.
@@ -20,6 +19,9 @@ Node.JS is required.
 Run `node server.js` in the command line.
 
 ## Usage
+![1](https://user-images.githubusercontent.com/69816889/99964981-2d00bc80-2d62-11eb-9c47-ac97ee7f1f7e.PNG)
+![2](https://user-images.githubusercontent.com/69816889/99964984-2eca8000-2d62-11eb-8a42-9982db5be6de.PNG)
+![3](https://user-images.githubusercontent.com/69816889/99964987-2ffbad00-2d62-11eb-989a-0bcf3e70e89c.PNG)
 
 
 ## License
