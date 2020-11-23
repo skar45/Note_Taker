@@ -36,11 +36,12 @@ function router(app){
     app.delete('/api/notes/:id', function(req,res){
         const id = req.params.id;
         let file = JSON.parse(fs.readFileSync('./app/db.json','utf-8'));
-        file.forEach(el => {
+        file.forEach((el,indx) => {
             if(el.id == id){
-                file.splice(id,1)
+                file.splice(indx,1)
             }
         });
+        console.log('file content: ', file)
         const result = fs.writeFileSync('./app/db.json',JSON.stringify(file))
         res.send(file)
     })
